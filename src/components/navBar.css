@@ -1,3 +1,9 @@
 .nav-bar-logo {
-    width: 10vh;
+    width: 9vh;
 }
+@media screen and (min-width: 1000px) {
+    .nav-bar-logo {
+        width: 15vh;
+    }
+}
+
