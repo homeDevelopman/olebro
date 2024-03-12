@@ -1,6 +1,16 @@
 .nav-bar-logo {
     width: 9vh;
+    transition: all 0.5s ease;
+    border-radius: 50%;
 }
+.nav-bar-logo:hover {
+    transition: all 0.7s ease-out;
+    box-shadow:
+            0 0 60px 30px #fff,  /* inner white */
+            0 0 100px 60px #f0f, /* middle magenta */
+            0 0 140px 90px #0ff; /* outer cyan */
+}
+
 @media screen and (min-width: 1000px) {
     .nav-bar-logo {
         width: 15vh;
