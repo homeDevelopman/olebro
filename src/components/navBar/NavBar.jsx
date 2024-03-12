@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/logo/v1-black.png';
+import logo from '../../assets/img/logo/v1-black.png';
 
-import facebook from '../assets/img/icons/facebook.svg';
-import inst from '../assets/img/icons/insta.svg';
-import vkIcon from '../assets/img/icons/vk.svg';
-import telegram from '../assets/img/icons/telegram.svg';
+import facebook from '../../assets/img/icons/facebook.svg';
+import inst from '../../assets/img/icons/insta.svg';
+import vkIcon from '../../assets/img/icons/vk.svg';
+import telegram from '../../assets/img/icons/telegram.svg';
 import { HashLink } from 'react-router-hash-link';
 import {
     BrowserRouter as Router
