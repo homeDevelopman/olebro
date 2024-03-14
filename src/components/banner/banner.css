@@ -67,3 +67,18 @@
     border-right: 0.08em solid #666;
     font-style: italic;
 }
+
+.image-neon {
+    display: block;
+    margin: 20px auto;
+    width: auto; /* Или задайте конкретную ширину */
+    transition: filter 0.3s ease; /* Плавный переход фильтра */
+    filter: drop-shadow(0 0 5px #0000); /* Начальное состояние без видимой тени */
+    cursor: none;
+}
+
+.image-neon:hover {
+    filter: drop-shadow(0 0 8px rgba(0, 255, 0, 0.73)) /* Зеленая неоновая тень */
+    drop-shadow(0 0 10px #ffea00) /* Более яркая и широкая */
+    drop-shadow(0 0 12px rgba(0, 255, 0, 0.75)); /* Еще более яркая и широкая */
+}
