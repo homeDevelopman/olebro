@@ -12,7 +12,7 @@ export const Banner = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+    const toRotate = [ "Художник", "монументалист", "дизайнер"];
     const period = 2000;
 
     useEffect(() => {
@@ -56,10 +56,14 @@ export const Banner = () => {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                    <span className="tagline">Welcome to my Portfolio</span>
-                                    <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                                    <span className="tagline">OleBro with love</span>
+                                    <h1>{`Привет! Я Олёна`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "художник", "монументалист", "дизайнер" ]'><span className="wrap">{text}</span></span></h1>
+                                    <p>
+                                        Это сайт творческого портфолио!
+                                        Здесь вы найдете мир моего вдохновения, где искусство, монументализм и дизайн сочетаются, чтобы создать визуальные истории, пронизанные глубоким смыслом.
+                                        Давайте вместе погрузимся в мой мир креативных возможностей и откроем новые горизонты искусства.
+                                    </p>
+                                    <button onClick={() => console.log('connect')}>Связаться со мной <ArrowRightCircle size={25} /></button>
                                 </div>}
                         </TrackVisibility>
                     </Col>
